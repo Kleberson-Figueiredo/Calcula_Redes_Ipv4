@@ -1,6 +1,10 @@
 from Classes.CalcIpv4 import CalcIpv4
+ip = input("Enter IP address: ")
+mask = input("Enter mask: ")
+prefixo = int(input("Enter prefix: "))
 
-calc_ipv4 = CalcIpv4(ip='192.168.0.1', prefixo=21)
+
+calc_ipv4 = CalcIpv4(ip=ip, prefixo=prefixo, mascara=mask)
 
 print(f'IP: {calc_ipv4.ip}')
 print(f'Máscara: {calc_ipv4.mascara}')
